@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecânica Rápida - Orçamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mecânica Rápida</h1>
+        <p>Seu carro, nosso cuidado!</p>
+    </header>
+
+    <div class="form-container">
+        <h2>Solicite um Orçamento</h2>
+        <form id="contactForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(xx) xxxx-xxxx">
+
+            <label for="servico">Serviço Desejado:</label>
+            <select id="servico" name="servico" required>
+                <option value="">Selecione</option>
+                <option value="Troca de óleo">Troca de óleo</option>
+                <option value="Alinhamento">Alinhamento</option>
+                <option value="Freios">Freios</option>
+                <option value="Outros">Outros</option>
+                <option value="Limpeza de blaster imperial">Limpeza de blaster imperial</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mecânica Rápida. Pedro Eduardo Dall Agnol.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
